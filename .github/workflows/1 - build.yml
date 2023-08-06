@@ -14,6 +14,7 @@ jobs:
           native-image-job-reports: 'true'
       - name: Build
         run: |
+          keytool -import -keystore $GRAALVM_HOME/lib/security/cacerts -alias kamehouse-bundle -trustcacerts -file ./cert/certificate.crt --noprompt
           echo "GRAALVM_HOME: $GRAALVM_HOME"
           echo "JAVA_HOME: $JAVA_HOME"
           java --version

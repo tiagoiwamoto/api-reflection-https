@@ -705,6 +705,10 @@
       "locales":[""]
     }, 
     {
+      "name":"org.apache.tomcat.util.threads.LocalStrings",
+      "locales":[""]
+    }, 
+    {
       "name":"org.apache.tomcat.websocket.LocalStrings",
       "locales":[""]
     }, 
