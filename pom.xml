@@ -107,8 +107,8 @@
 <!--                            <imageName>springbootpoc</imageName>-->
                             <buildArgs>
                                 <buildArg>-H:+ReportExceptionStackTraces</buildArg>
-                                <buildArg>-H:ConfigurationFileDirectories=./config</buildArg>
-                                <buildArg>-H:ReflectionConfigurationFiles=./config/reflect-config.json</buildArg>
+                                <buildArg>-H:ConfigurationFileDirectories=/config</buildArg>
+                                <buildArg>-H:ReflectionConfigurationFiles=/config/reflect-config.json</buildArg>
                             </buildArgs>
                         </configuration>
                     </plugin>
