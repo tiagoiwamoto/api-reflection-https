@@ -1,12 +1,16 @@
 package com.example.springbootpoc;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
+@Slf4j
 public class MeuReflection {
 
     public void execute(MeuPojo pojo){
+        log.info("Entrando no meu reflection");
         Field[] fields = pojo.getClass().getDeclaredFields();
         System.out.println("Campos: ");
         System.out.println(Arrays.asList(fields));
